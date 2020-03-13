@@ -53,7 +53,7 @@
             <attribute name="attrs">{'invisible': True}</attribute>
         </xpath>
     </field>
-</record>
+</record>b
 
 <record id="invoice_tree" model="ir.ui.view">
     <field name="name">account_usability.invoice_tree</field>
@@ -370,7 +370,7 @@ module -->
         <xpath expr="//label[@for='full_reconcile_id']/.." position="attributes">
             <attribute name="attrs">{'invisible': [('account_reconcile', '=', False)]}</attribute>
         </xpath>
-    </field>
+    </field>b
 </record>
 
 <record id="view_move_line_tree" model="ir.ui.view">
@@ -613,14 +613,14 @@ because it is useless and confusing -->
 </record>
 
 <!-- Remove menu entry "Accounting > Reports > PDF Reports" as there are broken -->
-<record id="account.menu_finance_legal_statement" model="ir.ui.menu">
+<!--<record id="account.menu_finance_legal_statement" model="ir.ui.menu">
     <field name="groups_id" eval="[(6, 0, [ref('base_usability.group_nobody')])]"/>
-</record>
+</record>-->
 
 <!-- Also hide the corresponding configuration menu "Accounting > Configuration > Financial Reports" -->
-<record id="account.menu_account_reports" model="ir.ui.menu">
+<!--<record id="account.menu_account_reports" model="ir.ui.menu">
     <field name="groups_id" eval="[(6, 0, [ref('base_usability.group_nobody')])]"/>
-</record>
+</record>-->
 
 <!-- Duplicate the menu "Sales > Configuration > Contacts > Bank Accounts"
 under "Accounting > Configuration", because most users will try to find it there -->
